@@ -1,0 +1,142 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Meu Curriculo</h1>
+    </header>
+    <form action="">
+    <fieldset>
+        <legend align="center"><h3><i>👤Minhas informações básicas</i></h3></legend>
+        <img src="rodrigo.jpg" alt="rodrigão" width="6%">
+        <br><br>
+
+        <label for="nome"><i><strong>Nome:</strong></i></label>
+        <input type="text" id="nome" name="nome" placeholder="Christian Da Rosa" disabled>
+
+        <br><br>
+
+        <label for="idade"><i><strong>Minha idade:</strong></i></label>
+        <input id="idade" type="number" max="120" required placeholder="16" readonly>
+
+        <br><br>
+
+        <label for="profissao"><i><strong>Profissão:</strong></i></label>
+        <input type="text" id="profissao" name="profissao" placeholder="estagiário">
+
+        <br><br>
+
+        <label for="Curriculo"><i><strong>Adicione o seu curriculo no campo abaixo:</strong></i></label><br>
+        <input type="file" required id="Curriculo" name="Curriculo">
+
+        <br><br>
+        <label for="texto"><i><strong>Pequeno resumo pessoal:</strong></i></label><br>
+        <textarea 
+        name="texto" 
+        id="texto" 
+        rows="5%" 
+        cols="70%"
+        maxlength="10">Estudante de Ensino Médio Técnico em Desenvolvimento de Sistemas, com conhecimento em programação, banco de dados e controle de versão (Git). Já participei de cursos profissionalizantes e entrevistas técnicas, buscando constantemente aprimorar minhas habilidades. Tenho facilidade com tecnologia, sou dedicado, responsável e estou em busca da minha primeira oportunidade na área de TI para aplicar e expandir meus conhecimentos.
+        </textarea>
+
+    </fieldset>
+
+    <fieldset>
+        <legend align="center"><h3><i>Entre em contato</i></h3></legend>
+
+        <label for="email"><i><strong>E-mail:</strong></label>
+        <input type="email" name="email" id="email" required placeholder="christian.darosa0106@gmail.com" readonly>
+
+        <br><br>
+
+        <label for="telefone"><i><strong>telefone:</strong></label>
+        <input type="tel" id="telefone" name="telefone" required pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" placeholder="(46) 999414639" disabled>
+
+        <br><br>
+        <i><strong>Tipo de telefone:</strong><br>
+        <input type="radio" id="residencial" name="genero" value="residencial">
+        <label for="residencial">residencial</label>
+
+        <input type="radio" id="Pessoal" name="genero" value="Pessoal" checked>
+        <label for="Pessoal">Pessoal</label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend align="center"><h3><i>📚Competências</i></h3></legend>
+        <table width="100%" border="1">
+            <tr>
+                <th>Curso</th>
+                <th>Local</th>
+                <th>Carga horária</th>
+            </tr>
+            <tr>
+                <td >Programação</td>
+                <td>SESI/SENAI Dois Vizinhos</td>
+                <td>200 HRS</td>
+            </tr>
+            <tr>
+                <td>Aprender e crescer - TI</td>
+                <td>SUDOTEC Dois Vizinhos</td>
+                <td>530 HRS</td>
+
+            </tr>
+    </table>
+    </fieldset>
+
+    <fieldset>
+        <legend align="center"><h3><i>📚Conhecimentos em programação</i></h3></legend>
+
+        
+        <input type="checkbox" id="HTML" name="linguagens" value="HTML" checked>
+        <label for="HTML"><strong>HTML</strong></label><br>
+
+        <input type="checkbox" id="Python" name="linguagens" value="Python" checked>
+        <label for="Python"><strong>Python</strong></label><br>
+
+        <input type="checkbox" id="C++" name="linguagens" value="C++">
+        <label for="C++"><strong>C++</strong></label><br>
+
+        <input type="checkbox" id="JavaScript" name="linguagens" value="JavaScript">
+        <label for="JavaScript"><strong>JavaScript</strong></label><br>
+
+        <label for="Preferida"><i><strong>Maior dominio:</strong></label>
+        <select name="Preferida" id="Preferida" required>
+          <option value="Python">Python</option>
+          <option value="JavaScript" selected>JavaScript</option>
+          <option value="C++">C++</option>
+          <option value="HTML">HTML</option>
+
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend align="center"><h3><i>📚Objetivos principais</i></h3></legend>
+        <i><strong>
+            <ul>
+                <li>Trablhar em uma grande empresa de software</li>
+                <li>Aumentar o conhecimento na área de:</li>
+                    <ul>
+                        <li>Analise</li>
+                        <li>Desenvolvimento</li>
+                        <li>Programação</li>
+                    </ul>
+                </li>
+            </ul>
+        </strong></i>
+
+    </fieldset>
+
+    <fieldset>
+        <legend align="center"><h3><i>📄Entrega</i></h3></legend>
+
+        <br>
+        <button type="submit">✅Enviar</button>
+        <button type="reset">❌Limpar</button>
+    </fieldset>
+    </form>
+</body>
+</html>
